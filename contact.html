@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <nav class="navbar">
       <div class="brand">sunnyxai</div>
@@ -15,25 +16,56 @@
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="section section-light">
       <div class="section-header">
         <span>Contact</span>
         <h2>Let's Connect</h2>
       </div>
-      <p>For collaboration, contract work, or questions about AI and development, feel free to reach out.</p>
+
+      <p>
+        For collaboration, freelance work, or AI/ML projects, feel free to reach out.
+      </p>
+
+      <!-- CONTACT LINKS -->
       <div class="contact-grid">
-        <a class="contact-card" href="mailto:@24amtics387.com">Email: 24amtics387@gmail.com</a>
-        <a class="contact-card" href="https://github.com/sunnyxai" target="_blank" rel="noreferrer">GitHub: github.com/sunnyxai</a>
+        <a class="contact-card" href="mailto:24amtics387@gmail.com">
+          Email: 24amtics387@gmail.com
+        </a>
+
+        <a class="contact-card" href="https://github.com/sunnyxai" target="_blank">
+          GitHub: github.com/sunnyxai
+        </a>
       </div>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your name" required>
+
+        <input type="email" name="email" placeholder="Your email" required>
+
+        <textarea name="message" placeholder="Your message" rows="6" required></textarea>
+
+        <button type="submit">Send Message →</button>
+      </form>
+
     </section>
   </main>
+
   <footer>
     <p>© 2026 Sunny Prajapati. Designed for a professional AI portfolio.</p>
   </footer>
+
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- YOUR JS FILE -->
+  <script src="script.js"></script>
+
 </body>
 </html>
