@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Free Resources — sunnyxai | AI, Python & DSA Downloads</title>
+  <meta name="description" content="Free downloadable PDFs, cheat sheets, and code snippets for AI, Python, and Data Structures. Used by 1000+ learners from sunnyxai's YouTube channel.">
+  <meta name="keywords" content="AI resources, Python cheat sheet, DSA guide, machine learning PDF, sunnyxai, free coding resources">
+  <meta name="author" content="Sunny Prajapati">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Resources — sunnyxai">
+  <meta property="og:description" content="Free PDFs, code snippets, and learning materials for AI, Python & DSA. Used by 1000+ learners.">
+  <meta property="og:type" content="website">
+
+  <!-- Existing Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Prism.js Theme (Tomorrow Night) — Syntax Highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav class="navbar">
+      <div class="brand">sunnyxai</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= RESOURCES HERO ================= -->
+    <section class="resources-hero">
+      <div class="resources-hero-content">
+        <span class="eyebrow">YouTube • Learning • Open Source</span>
+        <h1>Free Resources</h1>
+        <p class="hero-text">Curated PDFs, cheat sheets, and code snippets from my videos. Download, learn, and build.</p>
+        <div class="trust-badges">
+          <div class="trust-badge"><span>👥</span> <span>1000+ Learners</span></div>
+          <div class="trust-badge"><span>⚡</span> <span>Updated Weekly</span></div>
+          <div class="trust-badge"><span>🔥</span> <span>100% Free</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FILTER & SEARCH BAR ================= -->
+    <section class="section" id="resources-section">
+      <div class="section-header">
+        <span>Downloads</span>
+        <h2>PDF Resources</h2>
+      </div>
+
+      <div class="filter-bar" id="filter-bar">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="dsa">DSA</button>
+        </div>
+        <div class="search-wrapper">
+          <input type="text" class="search-input" id="resource-search" placeholder="Search resources..." aria-label="Search resources">
+        </div>
+      </div>
+
+      <!-- ================= RESOURCE CARDS GRID ================= -->
+      <div class="resource-grid" id="resource-grid">
+
+        <!-- Card 1 — AI -->
+        <article class="resource-card" data-category="ai">
+          <div class="resource-icon">🤖</div>
+          <h3>AI/ML 365-Day Daily Roadmap</h3>
+          <p>A complete 365-day learning path — one step per day from Python basics to deploying ML models.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-video">Used in Video</span>
+            <span class="resource-tag tag-beginner">Beginner</span>
+            <span class="resource-tag tag-popular">🔥 Most Downloaded</span>
+          </div>
+          <a class="download-btn" href="resources/AI_ML_365Day_Daily_Roadmap.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 2 — Python -->
+        <article class="resource-card" data-category="python">
+          <div class="resource-icon">🐍</div>
+          <h3>Python Quick Reference</h3>
+          <p>Essential syntax, built-in functions, list comprehensions, and common patterns.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-video">Used in Video</span>
+            <span class="resource-tag tag-beginner">Beginner</span>
+            <span class="resource-tag tag-popular">🔥 Popular</span>
+          </div>
+          <a class="download-btn" href="resources/python-quick-reference.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 3 — DSA -->
+        <article class="resource-card" data-category="dsa">
+          <div class="resource-icon">🧩</div>
+          <h3>DSA Roadmap</h3>
+          <p>Step-by-step study plan covering arrays, trees, graphs, DP, and interview patterns.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-advanced">Advanced</span>
+            <span class="resource-tag tag-popular">🔥 Most Downloaded</span>
+          </div>
+          <a class="download-btn" href="resources/dsa-roadmap.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 4 — AI -->
+        <article class="resource-card" data-category="ai">
+          <div class="resource-icon">🧠</div>
+          <h3>Neural Networks Explained</h3>
+          <p>Visual guide to perceptrons, backpropagation, CNNs, and RNNs with diagrams.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-video">Used in Video</span>
+            <span class="resource-tag tag-advanced">Advanced</span>
+          </div>
+          <a class="download-btn" href="resources/neural-networks-guide.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 5 — Python -->
+        <article class="resource-card" data-category="python">
+          <div class="resource-icon">📦</div>
+          <h3>Python Libraries Toolkit</h3>
+          <p>NumPy, Pandas, Matplotlib, Scikit-learn — key functions and usage examples.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-beginner">Beginner</span>
+          </div>
+          <a class="download-btn" href="resources/python-libraries-toolkit.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 6 — Python Practice -->
+        <article class="resource-card" data-category="python">
+          <div class="resource-icon">✏️</div>
+          <h3>Python Practice — 300 Problems</h3>
+          <p>300 hands-on exercises covering loops, conditional statements, and string manipulation — with solutions.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-video">Used in Video</span>
+            <span class="resource-tag tag-beginner">Beginner</span>
+            <span class="resource-tag tag-popular">🔥 Popular</span>
+          </div>
+          <a class="download-btn" href="resources/Python_Practice_300_Problems.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+        <!-- Card 7 — DSA -->
+        <article class="resource-card" data-category="dsa">
+          <div class="resource-icon">⚡</div>
+          <h3>Big-O Complexity Chart</h3>
+          <p>Time & space complexity for every major data structure and sorting algorithm.</p>
+          <div class="resource-tags">
+            <span class="resource-tag tag-video">Used in Video</span>
+            <span class="resource-tag tag-beginner">Beginner</span>
+          </div>
+          <a class="download-btn" href="resources/big-o-complexity-chart.pdf" download>
+            <span>↓</span> Download PDF
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= CODE SNIPPETS SECTION ================= -->
+    <section class="section snippet-section">
+      <div class="section-header">
+        <span>Code</span>
+        <h2>Useful Snippets</h2>
+      </div>
+      <p class="section-description">Copy-paste ready code from my YouTube tutorials. Click "Copy" to grab any snippet.</p>
+
+      <!-- Snippet 1 — Binary Search -->
+      <article class="snippet-card">
+        <div class="snippet-header">
+          <div>
+            <h3>Binary Search</h3>
+            <p>Classic O(log n) search on a sorted array.</p>
+          </div>
+          <button class="copy-btn" aria-label="Copy code">Copy</button>
+        </div>
+        <pre><code class="language-python">def binary_search(arr, target):
+    """Return index of target in sorted arr, or -1 if not found."""
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+# Usage
+numbers = [1, 3, 5, 7, 9, 11, 13]
+print(binary_search(numbers, 7))  # Output: 3</code></pre>
+      </article>
+
+      <!-- Snippet 2 — Linear Regression -->
+      <article class="snippet-card">
+        <div class="snippet-header">
+          <div>
+            <h3>Simple Linear Regression</h3>
+            <p>Train a model and visualise predictions with scikit-learn.</p>
+          </div>
+          <button class="copy-btn" aria-label="Copy code">Copy</button>
+        </div>
+        <pre><code class="language-python">import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+
+# Generate sample data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2.1, 4.0, 5.8, 8.1, 10.2])
+
+# Train the model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+predictions = model.predict(X)
+print(f"Slope: {model.coef_[0]:.2f}, Intercept: {model.intercept_:.2f}")
+
+# Plot
+plt.scatter(X, y, color="#00f3ff", label="Data")
+plt.plot(X, predictions, color="#bc13fe", label="Fit")
+plt.legend()
+plt.show()</code></pre>
+      </article>
+
+      <!-- Snippet 3 — Fibonacci with Memoization -->
+      <article class="snippet-card">
+        <div class="snippet-header">
+          <div>
+            <h3>Fibonacci — Memoization</h3>
+            <p>Top-down dynamic programming approach using functools cache.</p>
+          </div>
+          <button class="copy-btn" aria-label="Copy code">Copy</button>
+        </div>
+        <pre><code class="language-python">from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def fibonacci(n):
+    """Return the n-th Fibonacci number (0-indexed)."""
+    if n < 2:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Print first 10 Fibonacci numbers
+for i in range(10):
+    print(f"F({i}) = {fibonacci(i)}")</code></pre>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="cta-section">
+    <span class="cta-badge">📺 WATCH THE TUTORIALS</span>
+    <h2>Learn More on YouTube</h2>
+    <p>These resources are companions to my YouTube tutorials. Subscribe to follow along.</p>
+    <div class="cta-buttons">
+      <a class="btn-primary" href="https://www.youtube.com/@sunnyxaii" target="_blank">▶ Subscribe on YouTube</a>
+      <a class="btn-secondary" href="contact.html">💬 Ask a Question</a>
+    </div>
+  </section>
+
+  <!-- ================= RICH FOOTER ================= -->
+  <footer class="rich-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">sunnyxai</div>
+        <p>Helping you learn AI, Python, and DSA faster with free resources and YouTube tutorials.</p>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@sunnyxaii" target="_blank">YouTube</a>
+          <a href="https://github.com/sunnyxai" target="_blank">GitHub</a>
+          <a href="mailto:24amtics387@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">All Resources</a></li>
+          <li><a href="resources.html#resource-grid">PDF Downloads</a></li>
+          <li><a href="resources.html">Code Snippets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@sunnyxaii" target="_blank">YouTube Channel</a></li>
+          <li><a href="https://github.com/sunnyxai" target="_blank">GitHub Profile</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sunny Prajapati (sunnyxai). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Prism.js Core + Python language component -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+  <!-- Site JS -->
+  <script src="script.js"></script>
+</body>
+</html>
